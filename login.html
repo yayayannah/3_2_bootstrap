@@ -1,125 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Login</title>
-</head>
-<body>
-
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
     <div class="container">
+      <div class="row w-20 h-100 p-5 mt-5"></div>
+      <div class="row justify-content-center"> 
 
-    <div class="forHeader">
-        <h1>Glad to have you back!</h1>
-        <h3>Login</h3>
+        <div class="col-4">
+          <div class="card bg-body-secondary p-4">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Remember password</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
     </div>
-
-
-    <div class="forInputs">
-        <input type="text" class="input" placeholder="username">
-        <i><img src="images/user.png" alt="user" style="width: 20px; height: 18px;"></i>
-    </div>
-    <div class="forInputs">
-        <input type="password" class="input" placeholder="password">
-        <i><img src="images\unlock.png" alt="lock" style="width: 20px; height: 18px;"></i>
-    </div>
-
-
-    <div class="forLogin">
-        <input type="submit" class="submit" value="Login">
-    </div>
-
-    <div class="routeRegister">
-        <span class="signUp"> First time around here? <a href="#"> Sign up!</a></span>
-    </div>
-
-    </div>
-
+    
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100&family=Raleway:wght@100&family=Roboto+Slab:wght@100&display=swap');
-
-
-*{
-    font-family: 'Raleway', sans-serif;
-}
-
-body{
-    background-image: url(/images/background2.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-color: whitesmoke;
-}
-
-/* for container position */
-.container{
-    position: absolute;
-    top: 23%;
-    left: 5%;
-    align-items: center;
-    text-align: center;
-}
-
-
-/* for input boxes design */
-.input{
-    height: 45px;
-    width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.6);
-    cursor: text;
-
-}
-.forInputs{
-    display: flex;
-    flex-direction: column;
-    cursor: text;
-}
-
-/* for input icons */
-i{
-    position: relative;
-    top: -34px;
-    left: 185px;
-    color: #fff;
-}
-
-
-
-/* for placeholder (in input boxes) */
-::-webkit-input-placeholder{
-    color: #fff;
-    border-radius: none;
-}
-
-/* for login button */
-.submit{
-    align-items: center;
-    border: none;
-    border-radius: 30px;
-    font-size: 15px;
-    height: 45px;
-    outline: none;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    cursor: pointer;
-    transition: .3s;
-}
-.submit:hover{
-    box-shadow: 1px 5px 7px 1px rgba(0,0,0,.4);
-}
-
-.routeRegister{
-    margin-top: 2%;
-    font-size: smaller;
-}
-
+      @media screen and (max-width:1092px) {
+        .card{
+            width: 50vw;
+        }
+      }
+      @media screen and (max-width:766px) {
+          .card{
+              width: 75vw;
+          }
+      }
+      @media screen and (max-width:574px) {
+          .card{
+              width: 90vw;
+          }
+      }
     </style>
-</div>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  </body>
 </html>
