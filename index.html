@@ -10,7 +10,6 @@
   <body>
     <nav class="navbar navbar-expand-lg" style="background-color: #EAE8DF; box-shadow: 4px 0px 8px 0px #929292cb;">
         <div class="container-fluid">
-
           
           <a class="navbar-brand" href="#">E-commerce</a>  
 
@@ -22,6 +21,7 @@
             </div>
 
           </div>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -36,6 +36,70 @@
           
 
         </div>
+
+                  <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" style="background-color: whitesmoke; border-color: black; color: black;">
+            Add product
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Add a product</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                  <!-- FOR ADD PRODUCCT INPUTS -->
+
+                <div class="modal-body">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Perfume Name</span>
+                    <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  
+                  
+                  <div class="mb-3">
+                    <label for="basic-url" class="form-label">Your vanity URL</label>
+                    <div class="input-group">
+                      <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                      <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+                    </div>
+                    <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" placeholder="Product's price" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                  </div>
+                  
+                  <div class="input-group mb-3">
+                    <label class="input-group-text" for="inputGroupSelect01">Category</label>
+                    <select class="form-select" id="inputGroupSelect01">
+                      <option selected>Choose...</option>
+                      <option value="1">For him</option>
+                      <option value="2">For her</option>
+                      <option value="3">Unisex</option>
+                    </select>
+                  </div>
+                  
+                  <div class="input-group">
+                    <span class="input-group-text">Description</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                  </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
 
     </nav>
 
